@@ -12,7 +12,7 @@ import jakarta.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/productos")
+@RequestMapping("/api/materia_prima")
 @CrossOrigin(origins = "*")
 public class MateriaPrimaController {
 
