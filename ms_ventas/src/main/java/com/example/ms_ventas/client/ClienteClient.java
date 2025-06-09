@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.*;
 public interface ClienteClient {
 
     // 1. Obtener cliente por ID
-    @GetMapping("/api/clientes/{id}")
+    @GetMapping("/clientes/{id}")
     ClienteDTO obtenerClientePorId(@PathVariable("id") Long id);
 
     // 2. Buscar cliente por nombre
-    @GetMapping("/api/clientes/buscar-por-nombre/{nombre}")
+    @GetMapping("/clientes/buscar-por-nombre/{nombre}")
     ClienteDTO buscarPorNombre(@PathVariable("nombre") String nombre);
 
     // 3. Crear nuevo cliente
-    @PostMapping("/api/clientes")
+    @PostMapping("/clientes")
     ClienteDTO crearCliente(@RequestBody ClienteDTO clienteDTO);
 }
